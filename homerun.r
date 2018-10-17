@@ -12,4 +12,6 @@ mean(Houston) - mean(Boston)
 
 #The strength of the team is the team, meaning you don't want a big difference between your biggest
 #hr hitter and your worst hr hitter. A test statistic for this is
-#hr = max(HR team 1) - min HR (team 2/
+#hr = (max HR (team 1) - min HR (team 1)) / ((max HR (team 2) - min HR (team 2)) 
+
+(max(Boston)- min(Boston)) / (max(Houston) - min(Houston))
