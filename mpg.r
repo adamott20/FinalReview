@@ -19,7 +19,7 @@ obs_diff <- mean(manual) - mean(auto)
 
 car_perm <- car
 diff <- replicate(nreps, {
-  car_perm$am <- sample(0:1, dim(car_perm)[1], replace = TRUE)
+  car_perm$am <- sample(car$am) 
   auto_new <- car_perm[car_perm$am == 0,1]
   manual_new <- car_perm[car_perm$am == 1,1]
   mean(manual_new) - mean(auto_new)
